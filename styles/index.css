@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+  font-family: Roboto, Arial;
+  text-transform: uppercase;
+  line-height: 400%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
