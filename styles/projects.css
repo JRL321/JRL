@@ -3,6 +3,9 @@ h3 {
   padding: 0px;
   margin: 0px;
   line-height: 16px;
+  cursor: default;
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 p {
@@ -10,37 +13,74 @@ p {
   padding: 0px;
   line-height: 16px;
   font-weight: 300;
-  text-transform: capitalize;
+  text-transform: none;
   text-align: center;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+
+
+/* SIDEBAR */
+
+
+.projects-container {
+  display: flex;
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative;
+  height: 508px;
+  margin-bottom: 3em;
+}
+
+.left-sidebox-container {
+  position: absolute;
+  width: 160px;
+  margin-right: 4em;
+}
+
+.left-sidebox-title {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.left-sidebox-info p {
+  display: flex;
+  text-align: left;
+  margin-bottom: 1em;
 
 }
 
-.grid-content a {
+
+/* GRID */
+
+
+.grid-content {
+  position: absolute;
+  left: 250px;
+  right: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2em;
+  row-gap: 3em;
+  margin-top: 2em;
+}
+
+.grid-content-box {
+}
+
+.grid-content-box-img {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  box-shadow: 1px 1px 5px grey;
-  padding: 12px;
-  border-radius: 6px;
 }
 
-.grid-content a:hover {
-  opacity: 0.7;
-}
-
-.image-container img {
-  display: flex;
-  height: 150px;
+img {
   width: 150px;
-  border-radius: 75px;
+  height: 150px;
   object-fit: cover;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.grid-content-box-info {
+  margin-top: 12px;
+
 }
